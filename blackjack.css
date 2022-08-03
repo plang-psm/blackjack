@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background: rgb(10, 129, 9);
+  background: radial-gradient(
+    circle,
+    rgba(10, 129, 9, 1) 42%,
+    rgba(7, 89, 7, 1) 100%
+  );
+  color: white;
+}
+
+.title {
+  font-size: 100px;
+  margin-top: -250px;
+  color: gold;
+}
+
+.h3-menu {
+  font-size: 25px;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.btn {
+  width: 300px;
+  height: 60px;
+  font-size: 25px;
+  background-color: gold;
+  border: none;
+  border-radius: 5px;
+  color: rgb(10, 129, 9);
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+#player {
+  font-size: 25px;
+}
