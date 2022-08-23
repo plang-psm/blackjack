@@ -26,6 +26,9 @@ function start() {
   cards = [firstCard, secondCard];
   startEl.textContent = 'START GAME';
   hitEl.style.backgroundColor = 'gold';
+  hitEl.style.color = 'rgb(10, 129, 9)';
+  messageEl.style.color = 'white';
+
   renderGame();
 }
 
@@ -34,13 +37,16 @@ function renderGame() {
     message = 'Do you want to draw a new card?';
   } else if (sum === 21) {
     message = "Wohoo! You've got Blackjack!";
+    messageEl.style.color = 'gold';
     hasBlackJack = true;
   } else {
     message = "You're out of the game!";
+    messageEl.style.color = 'red';
     isAlive = false;
     startEl.textContent = 'PLAY AGAIN';
     startEl.style.backgroundColor = 'gold';
     hitEl.style.backgroundColor = 'red';
+    hitEl.style.color = 'white';
   }
   console.log(message);
   messageEl.textContent = message;
